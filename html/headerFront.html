@@ -22,32 +22,42 @@
 <!-- //////////////////////////////////////////////////////////////////// -->
 
 <headerFront>
-
-<nav class="navbar navbar-toggleable-xl navbar-light bg-faded">
-
-<!-- //////////////////////////////////////////////////////////////////// -->
-<!-- brand for navbar -> retour sur la page aoutside 8 -->
-<!-- //////////////////////////////////////////////////////////////////// -->
-
-   <a class="navbar-brand mr-auto" href="aoutside8.html">Aoutside 8</a>
-
-<!-- //////////////////////////////////////////////////////////////////// -->
-<!-- nav links -->
-<!-- //////////////////////////////////////////////////////////////////// -->
-
-   <a class="navbar-item mr-auto" href="programmation.html">Programmation</a>
-   <a class="navbar-item mr-auto" href="chantier.html">Chantier / Lieu De Vie</a>
-   <a class="navbar-item mr-auto" href="historique.html">Un Peu d'Histoire</a>
-
-<!-- //////////////////////////////////////////////////////////////////// -->
-<!-- div d'alignement droite -->
-<!-- //////////////////////////////////////////////////////////////////// -->
-
-   <div class="pull-right nav navbar-nav">
-   <a class="navbar-item pull-right" href="informations.html">Info Pratiques</a>
-
-   </div>
-</nav>
 </headerFront>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+
+<!-- Bouton de menu réduit -->
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarAoutside" aria-controls="navbarAoutside" aria-expanded="false" aria-label="Menu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <a class="navbar-brand" href="#">Aoutside 8</a>
+
+
+<!-- Décla contenu réduit -->
+  <div class="collapse navbar-collapse" id="navbarAoutside">
+
+  <!-- Contenu navbar -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="programmation.html">Programmation<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="chantier.html">Chantier / Lieu de vie</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="historique.html">Un peu d'Histoire</a>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+    	<li class='nav-item'><a class='nav-link' href='information.html'>Infos Pratiques</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+
 </body>
 </html>
