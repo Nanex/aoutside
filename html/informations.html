@@ -2,9 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=0.9">
+
 <!-- //////////////////////////////////////////////////////////////////// -->
 <!-- imports propres à bootstrap -->
 <!-- //////////////////////////////////////////////////////////////////// -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <link rel="stylesheet" href="../dependencies/bootstrap/bootstrap.min.css">
 <link rel="stylesheet" href="../dependencies/bootstrap/bootstrap-grid.min.css">
 <link rel="stylesheet" href="../dependencies/bootstrap/bootstrap-reboot.min.css">
@@ -12,6 +16,8 @@
 <link rel="stylesheet" href="../dependencies/tether/tether-theme-arrows.min.css">
 <link rel="stylesheet" href="../dependencies/tether/tether-theme-arrows-dark.min.css">
 <link rel="stylesheet" href="../dependencies/tether/tether-theme-basic.min.css">
+<link rel="stylesheet" href="../css/information.css">
+<link rel="stylesheet" href="../css/base.css">
 <script src="../dependencies/jQuery/jquery-3.2.1.min.js"></script>
 <script src="../dependencies/tether/tether.min.js"></script>
 <script src="../dependencies/bootstrap/bootstrap.min.js"></script>
@@ -19,7 +25,7 @@
 <!-- page title-->
 <!-- //////////////////////////////////////////////////////////////////// -->
 
-<title>Informations</title>
+<title>Infos pratiques</title>
 </head>
 <body>
 <!-- //////////////////////////////////////////////////////////////////// -->
@@ -35,12 +41,70 @@
 <!-- header importé -->
 <!-- //////////////////////////////////////////////////////////////////// -->
 	<div id="headerFront">
-	<div>
-<!-- //////////////////////////////////////////////////////////////////// -->
-<!-- container for page content -->
-<!-- //////////////////////////////////////////////////////////////////// -->
-	<div class="container-fluid">
-	
 	</div>
+
+<div class="jumbotron jumbotron-fluid">
+
+
+<div class='container-fluid' id="content">
+
+<div class='row'>
+
+<div class='container col-lg-4 col-xl-4 col-md-4 col-sm-12' id="gmap">
+
+
+		<!-- <iframe
+		  width="450"
+		  height="250"
+		  frameborder="0" style="border:0"
+		  src="
+		  	https://www.google.com/maps/embed/v1/place
+		  	?key=AIzaSyBNUtOam9Dtif-A-cGvOSwzP_gpyMkMGFw
+		  	&q=1+Boulevard+de+la+Terrasse,+91400+Orsay
+		  	&center=48.700619,2.1847302
+		  	&zoom=15.5" allowfullscreen>
+		</iframe> -->
+
+
+
+<iframe id='map'
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBNfnxc-ICGRHcuYs3IZnQoIruW-qqSRrg
+    &q=1+Boulevard+de+la+Terrasse,+91400+Orsay
+    &zoom=15
+    &center=48.7036006,2.1948016" allowfullscreen>
+</iframe>
+
+
+
+
+</div>
+
+<div class="container col-lg-8 col-xl-8 col-md-8 col-sm-12" id="infos">
+
+<div class='container-fluid' id='informations'>
+<h4>EN NAVETTE WEVER (10 PASSAGERS A 2 EUROS)</h4>
+<p>La RATP et Wever vous proposent des navettes réservables à partir de 10 personnes au départ du festival à partir de 23:30 jusqu'à 3h du matin ! 
+</br>Vous pouvez vous inscrire dès maintenant (2€).
+Toutes les infos sur leur <a href='http://wever.fr/Aoutside'>site</a> ! Pensez à vous inscrire (absolument)</p>
+
+<h4>EN BUS</h4>
+<p><b>Bus Ligne 1</b> (Cimetière d'Orsay)</br>
+<b>Noctilien N122</b> (Place de la République)
+</p>
+
+<h4>EN TRAIN</h4>
+<p><b>RER B</b> (Orsay)</p>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
 </body>
 </html>
