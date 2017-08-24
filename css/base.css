@@ -1,3 +1,7 @@
 body {
 	padding-top: 50px;
+
+}
+@viewport {
+   width: device-width;
 }

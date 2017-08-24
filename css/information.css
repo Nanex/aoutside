@@ -1,0 +1,34 @@
+.jumbotron {
+	height: 100vh;
+	display: flex;
+}
+
+#content {
+	margin: auto;
+	display :flex;
+/*	margin-right: 150px;
+	margin-left: 150px;*/
+}
+
+#gmap {
+	height: 75vh;
+	width: 28vw;
+	margin: auto;
+}
+
+#map {
+	height: 75vh;
+	width: 28vw;
+}
+
+#infos {
+	background-color: transparent;
+	height: 75vh;
+	width: 56vw;
+	margin: auto;
+	display: flex;
+}
+
+#informations {
+	margin: auto;
+}
