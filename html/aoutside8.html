@@ -32,6 +32,19 @@
   	$("#footerFront").load("footerFront.html"); 
 	});
 </script>
+<script>
+$(document).ready(function(){
+	$("#content").hide();
+    $("#front").click(function(){
+        $("#front").hide(
+            /*bottom: '0px',
+            height: '0px',
+            width: '0px'*/
+        );
+        $("#content").show();
+    });
+});
+</script>
 <!-- //////////////////////////////////////////////////////////////////// -->
 <!-- header importé -->
 <!-- //////////////////////////////////////////////////////////////////// -->
@@ -50,19 +63,7 @@
 	<img src="../dependencies/images/AO-Front.jpg">
 </div>
 
-<script>
-$(document).ready(function(){
-	$("#content").hide();
-    $("#front").click(function(){
-        $("#front").animate({
-            bottom: '200px',
-            height: '300px',
-            width: '300px'
-        });
-        $("#content").show();
-    });
-});
-</script>
+
 
 </div>
 

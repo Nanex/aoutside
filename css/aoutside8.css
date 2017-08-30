@@ -35,14 +35,17 @@
     left: 0;             /* on the far left ... */
     bottom: 0;           /* and at the bottom (makes sense later) */
     right: 0;            /* and the far right (ditto) */
-    margin: auto;        /* Best compromise between left/right & top/bottom = centre */
+    /*margin: auto;*/        /* Best compromise between left/right & top/bottom = centre */
 }
 
 #front {
     margin: auto;
     padding-right: 70px;
+
 }
 
 #content {
-    margin: auto;
+    /*margin: auto;*/
+    position: relative;
+    text-align: center;
 }
