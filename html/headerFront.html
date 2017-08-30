@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap.min.css">
-<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap-grid.min.css">
-<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap-reboot.min.css">
-<link rel="stylesheet" href="../dependencies/tether/tether.min.css">
-<link rel="stylesheet" href="../dependencies/tether/tether-theme-arrows.min.css">
-<link rel="stylesheet" href="../dependencies/tether/tether-theme-arrows-dark.min.css">
-<link rel="stylesheet" href="../dependencies/tether/ttether-theme-basic.min.css">
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap.min.css" />
+<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap-grid.min.css" />
+<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap-reboot.min.css" />
+<link rel="stylesheet" href="../dependencies/tether/tether.min.css" />
+<link rel="stylesheet" href="../dependencies/tether/tether-theme-arrows.min.css" />
+<link rel="stylesheet" href="../dependencies/tether/tether-theme-arrows-dark.min.css" />
+<link rel="stylesheet" href="../dependencies/tether/tether-theme-basic.min.css" />
 <script src="../dependencies/jQuery/jquery-3.2.1.min.js"></script>
 <script src="../dependencies/tether/tether.min.js"></script>
 <script src="../dependencies/bootstrap/bootstrap.min.js"></script>
-	<title>websiteHeader</title>
+<title>websiteHeader</title>
 </head>
 
 <body>
-<nav class="navbar navbar-toggleable-xl navbar-light bg-faded">
-   <a class="navbar-brand mr-auto" href="#">Aoutside ∞</a>
-   <a class="navbar-item mr-auto" href="#">Programmation</a>
-   <a class="navbar-item mr-auto" href="#">Chantier / Lieu De Vie</a>
-   <a class="navbar-item mr-auto" href="#">Un Peu d'Histoire</a>
-   <div class="pull-right nav navbar-nav">
-   <a class="navbar-item pull-right" href="#">Info Pratiques</a>
-   </div>
+
+<!-- //////////////////////////////////////////////////////////////////// -->
+<!-- header à importer -->
+<!-- //////////////////////////////////////////////////////////////////// -->
+
+<headerFront>
+</headerFront>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+
+<!-- Bouton de menu réduit -->
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarAoutside" aria-controls="navbarAoutside" aria-expanded="false" aria-label="Menu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <a class="navbar-brand" href="aoutside8.html">Aoutside 8</a>
+
+
+<!-- Décla contenu réduit -->
+  <div class="collapse navbar-collapse" id="navbarAoutside">
+
+  <!-- Contenu navbar -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="programmation.html">Programmation<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="chantier.html">Chantier / Lieu de vie</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="historique.html">Un peu d'Histoire</a>
+      </li> -->
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+    	<li class='nav-item'><a class='nav-link' href='informations.html'>Infos Pratiques</a></li>
+    </ul>
+
+  </div>
 </nav>
+
+
 </body>
 </html>

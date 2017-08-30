@@ -1,0 +1,19 @@
+#content{
+	padding-top: 1%;
+}
+
+.mosaique{
+	background-color: grey;
+	text-align: center;
+}
+
+#carouselChantier {
+  display: inline-block;
+  width:380px;
+  height:265px;
+}
+
+/*spacing of join button section*/
+#buttonContainer {
+	padding-top: 5%;
+}

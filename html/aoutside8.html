@@ -16,31 +16,57 @@
 <script src="../dependencies/tether/tether.min.js"></script>
 <script src="../dependencies/bootstrap/bootstrap.min.js"></script>
 <!-- //////////////////////////////////////////////////////////////////// -->
-<!-- page title-->
+<!-- page imports-->
 <!-- //////////////////////////////////////////////////////////////////// -->
-
-<title>Historique</title>
+<link rel="stylesheet" href="../css/aoutside8.css">
+<link rel="stylesheet" href="../css/base.css">
+<title>Aoutside 8</title>
 </head>
 <body>
 <!-- //////////////////////////////////////////////////////////////////// -->
 <!-- script d'import du header/footer -->
 <!-- //////////////////////////////////////////////////////////////////// -->
-	<script> 
-		$(function(){
-  		$("#headerFront").load("headerFront.html"); 
-  		$("#footerFront").load("footerFront.html"); 
-		});
-	</script>
+<script> 
+	$(function(){
+  	$("#headerFront").load("headerFront.html"); 
+  	$("#footerFront").load("footerFront.html"); 
+	});
+</script>
 <!-- //////////////////////////////////////////////////////////////////// -->
 <!-- header importé -->
 <!-- //////////////////////////////////////////////////////////////////// -->
-	<div id="headerFront">
-	<div>
+<!-- <div id="headerFront">
+</div> -->
 <!-- //////////////////////////////////////////////////////////////////// -->
 <!-- container for page content -->
 <!-- //////////////////////////////////////////////////////////////////// -->
-	<div class="container-fluid">
-	
-	</div>
+<div id="background">
+
+<div class='container' id="front">
+	<img src="../dependencies/images/AO-Front1-Transparent.png">
+</div>
+
+<div id="content" class='container'>
+	<img src="../dependencies/images/AO-Front.jpg">
+</div>
+
+<script>
+$(document).ready(function(){
+	$("#content").hide();
+    $("#front").click(function(){
+        $("#front").animate({
+            bottom: '200px',
+            height: '300px',
+            width: '300px'
+        });
+        $("#content").show();
+    });
+});
+</script>
+
+</div>
+
+
+
 </body>
 </html>

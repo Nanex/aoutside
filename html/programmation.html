@@ -1,0 +1,863 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- //////////////////////////////////////////////////////////////////// -->
+<!-- imports propres à bootstrap -->
+<!-- //////////////////////////////////////////////////////////////////// -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap-grid.min.css">
+<link rel="stylesheet" href="../dependencies/bootstrap/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="../dependencies/tether/tether.min.css">
+<link rel="stylesheet" href="../dependencies/tether/tether-theme-arrows.min.css">
+<link rel="stylesheet" href="../dependencies/tether/tether-theme-arrows-dark.min.css">
+<link rel="stylesheet" href="../dependencies/tether/tether-theme-basic.min.css">
+<link rel="stylesheet" href="../css/programmation.css">
+<link rel="stylesheet" href="../css/base.css">
+
+
+<script src="../dependencies/jQuery/jquery-3.2.1.min.js"></script>
+<script src="../dependencies/tether/tether.min.js"></script>
+<script src="../dependencies/bootstrap/bootstrap.min.js"></script>
+
+<!-- //////////////////////////////////////////////////////////////////// -->
+<!-- page title-->
+<!-- //////////////////////////////////////////////////////////////////// -->
+
+<title>Programmation</title>
+</head>
+<body>
+<!-- //////////////////////////////////////////////////////////////////// -->
+<!-- script d'import du header/footer -->
+<!-- //////////////////////////////////////////////////////////////////// -->
+	<script> 
+		$(function(){
+  		$("#headerFront").load("headerFront.html"); 
+  		$("#footerFront").load("footerFront.html"); 
+		});
+	</script>
+
+<!-- script pour l'affichage en onglets de la prog -->
+<!-- <script> 
+  var url = document.location.toString();
+if (url.match('#')) {
+  $('a[href=#'+url.split('#')[1]+']').tab('show') ;
+}
+</script> -->
+
+<!-- //////////////////////////////////////////////////////////////////// -->
+<!-- header importé -->
+<!-- //////////////////////////////////////////////////////////////////// -->
+	<div id="headerFront">
+	</div>
+<!-- //////////////////////////////////////////////////////////////////// -->
+<!-- container for page content -->
+<!-- //////////////////////////////////////////////////////////////////// -->
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="..." alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="..." alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid" src="..." alt="Third slide">
+    </div>
+  </div>
+</div>
+
+<!-- onglets de nav de la prog -->
+<div class="buttonContainer mosaique">
+<div class="row">
+<div class="container-fluid col-12">
+<ul class="nav nav-tabs " role="tablist">
+    <li role="presentation" class="col-4"><button href="#progVendredi" class="btn btn-primary" aria-controls="vendredi" role="tab" data-toggle="tab">Vendredi</button></li>
+    <li role="presentation" class="col-4"><button href="#progSamedi" class="btn btn-primary" aria-controls="samedi" role="tab" data-toggle="tab">Samedi</button></li>
+    <li role="presentation" class="col-4"><button href="#partenaires" class="btn btn-primary" aria-controls="partenaires" role="tab" data-toggle="tab">Nos partenaires ! </button></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+<!-- contenu des onglets -->
+<div class="tab-content">
+<!-- prog de vendredi -->
+    <div role="tabpanel" class="tab-pane active" id="progVendredi">
+      <h2 class="planningTittle">Programmation de vendredi</h2>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <h2 id="scene1">Grande scène</h2>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <h2 id="scene2">Scène palette</h2>
+          </div>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge success"><p>15h00 <p></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                    Sarkis Dj Set </br>
+                  </a>
+                  15h00-18h30
+                </h4>
+
+              </div>
+              <div id="collapseOne1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  
+                </div>
+              </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-badge warning"><p>18h30<p></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne2">
+                    Fluff </br>
+                  </a>
+                  18h30-19h00
+                </h4>
+              </div>
+              <div id="collapseOne2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/fluff.hdmz/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+            </li>
+
+          <li>
+            <div class="timeline-badge success"><p>18h45 <p></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne3">
+                    Le Vasco Arabic Music dj set by Toro/Azor </br>
+                    
+                  </a>
+                  18h45-19h30
+                </h4>
+              </div>
+              <div id="collapseOne3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/fluff.hdmz/" role="button" onclick="window.open(this.href); return false;">le vasco</a>
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/toroazor/" role="button" onclick="window.open(this.href); return false;">Toro/Azor</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+          </li>
+
+        <li>
+            <div class="timeline-badge success"><p>19h30<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne4">
+                    Muriane </br>
+                  </a>
+                19h30-20h30
+                </h4>
+              </div>
+              <div id="collapseOne4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/murianemusic/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+
+        <li class="timeline-inverted">
+            <div class="timeline-badge warning"><p>19h30<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne5">
+                    Why not </br>
+                  </a>
+                  19h30-20h30
+                </h4>
+              </div>
+              <div id="collapseOne5" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/BigKiff/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="timeline-badge success"><p>20h30<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne6">
+                    Jeune_pousse_du_91 dj set </br>
+                  </a>
+                  20h30-21h15
+                </h4>
+              </div>
+              <div id="collapseOne6" class="panel-collapse collapse">
+                <div class="panel-body">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/Jeune_pousse_du_91-589242377846415/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li class="timeline-inverted">
+            <div class="timeline-badge warning"><p>21h00<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne7">
+                    Marty Can Fly </br>
+                  </a>
+                  21h00-22h00
+                </h4>
+              </div>
+              <div id="collapseOne7" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/martycanfly/" role="button" onclick="window.open(this.href); return false;">facebook</a>
+                      </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="timeline-badge success"><p>21h15<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne8">
+                    Zeska </br>
+                  </a>
+                  21h15-22h15
+                </h4>
+              </div>
+              <div id="collapseOne8" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/zeskamusic/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="timeline-badge success"><p>22h15<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne9">
+                    Yxng AvddxcT </br>
+                  </a>
+                  22h15-23h00
+                </h4>
+              </div>
+              <div id="collapseOne9" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/Yxng-AvddxcT-615011161909656/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li class="timeline-inverted">
+            <div class="timeline-badge warning"><p>22h30<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne10">
+                    Nube </br>
+                  </a>
+                  22h30_23h30
+                </h4>
+              </div>
+              <div id="collapseOne10" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/Nube-1112966058739082/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="timeline-badge success"><p>23h00<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne11">
+                    LSPC </br>
+                  </a>
+                  23h00-00h00
+                </h4>
+              </div>
+              <div id="collapseOne11" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/LSPCzpl/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="timeline-badge success"><p>00h00<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne13">
+                    MUNDOPAL </br>
+                  </a>
+                  00h00-01h00
+                </h4>
+              </div>
+              <div id="collapseOne13" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/MUNDOPAL-422853984434899/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li class="timeline-inverted">
+            <div class="timeline-badge warning"><p>00h00<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne14">
+                    Quinzequinze </br>
+                  </a>
+                  00h00-01h00
+                </h4>
+              </div>
+              <div id="collapseOne14" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/collectifquinzequinze/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+    </ul>
+    </div>
+  </div>
+  <!-- ::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- prog de samedi -->
+  <!-- ::::::::::::::::::::::::::::::::::::::::::::::::: -->
+    <div role="tabpanel" class="tab-pane" id="progSamedi">
+    <h2 class="planningTittle">Programmation du samedi</h2>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 col-sm-6">
+            <h2 id="scene1">Grande scène</h2>
+          </div>
+          <div class="col-lg-6 col-sm-6">
+            <h2 id="scene2">Scène palette</h2>
+          </div>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge success"><p>14h00 <p></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                    Speedboat mixtapes </br>
+                  </a>
+                  14h00-16h30
+                </h4>
+              </div>
+              <div id="collapseTwo1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/SpeedboatMixtapes/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+          </li>
+          <li>
+            <div class="timeline-badge success"><p>16h30 <p></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo2">
+                    ZazaKely </br>
+                  </a>
+                  16H30-17h15
+                </h4>
+              </div>
+              <div id="collapseTwo2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/ZazaKelyMusic/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+          </li>
+
+          <li>
+            <div class="timeline-badge success"><p>17h15<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo3">
+                    Jantes </br>
+                  </a>
+                  17h15-18h00
+                </h4>
+              </div>
+              <div id="collapseTwo3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  
+                </div>
+              </div>
+          </li>
+          <li>
+            <div class="timeline-badge success"><p>18h15<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo4">
+                    Poolpy and Guests Project </br>
+                  </a>
+                  18h15-19h15
+                </h4>
+              </div>
+              <div id="collapseTwo4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    
+                </div>
+              </div>
+        </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge warning"><p>18h30<p></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo5">
+                    Nathane </br>
+                  </a>
+                  18h30-19h00
+                </h4>
+              </div>
+              <div id="collapseTwo5" class="panel-collapse collapse">
+                <div class="panel-body">
+                  
+              </div>
+            </li>
+
+            <li>
+            <div class="timeline-badge success"><p>19h15<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo6">
+                    Monomite dj set </br>
+                  </a>
+                  19h15-20h15
+                </h4>
+              </div>
+              <div id="collapseTwo6" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/monomite/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li>
+        <div class="timeline-badge success"><p>20h15<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo7">
+                    Le Vasco v V v </br>
+                  </a>
+                  20h15-21h15
+                </h4>
+              </div>
+              <div id="collapseTwo7" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/levascomusic/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+
+        
+
+        <li class="timeline-inverted">
+            <div class="timeline-badge warning"><p>20h40<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo8">
+                    Open Mic </br>
+                  </a>
+                  20h40-22h00
+                </h4>
+              </div>
+              <div id="collapseTwo8" class="panel-collapse collapse">
+                <div class="panel-body">
+                  
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="timeline-badge success"><p>21h15<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo9">
+                    Discozoo </br>
+                  </a>
+                  21h15-22h00
+                </h4>
+              </div>
+              <div id="collapseTwo9" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/discozooo/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="timeline-badge success"><p>22h00<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo10">
+                    Noflipe </br>
+                  </a>
+                  22h00-23h00
+                </h4>
+              </div>
+              <div id="collapseTwo10" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/Noflipe/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li class="timeline-inverted">
+            <div class="timeline-badge warning"><p>22h30<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo11">
+                    Minencial </br>
+                  </a>
+                  22h30-23h30
+                </h4>
+              </div>
+              <div id="collapseTwo11" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/Minencial-661273367341440/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="timeline-badge success"><p>23h00<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo12">
+                    Ameecall </br>
+                  </a>
+                  23h00-00h00
+                </h4>
+              </div>
+              <div id="collapseTwo12" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/ameecalll/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <li>
+            <div class="timeline-badge success"><p>00h00<p></div>
+          <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo13">
+                    STAND WISE </br>
+                  </a>
+                  00h00-01h00
+                </h4>
+              </div>
+              <div id="collapseTwo13" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/standwise/" role="button" onclick="window.open(this.href); return false;">link-me-in!</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+        </li>
+        <!-- <li class="timeline-inverted">
+            <div class="timeline-badge warning"><p>00h00<p></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo14">
+                    Lala Ace (667) x OG.D </br>
+                  </a>
+                  00h00-01h00
+                </h4>
+              </div>
+              <div id="collapseTwo14" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/667NRM/" role="button" onclick="window.open(this.href); return false;">667</a>
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/ogdrico/" role="button" onclick="window.open(this.href); return false;">OG.D</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </li> -->
+
+        <li class="timeline-inverted">
+            <div class="timeline-badge warning"><p>00h00<p></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo14">
+                    Le Vasco Arabic Music dj set by Toro/Azor </br>
+                    
+                  </a>
+                  18h45-19h30
+                </h4>
+              </div>
+              <div id="collapseTwo14" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6">
+                        <p>Retrouvez-les sur facebook !</p>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/667NRM/" role="button" onclick="window.open(this.href); return false;">667</a>
+                        <a class="btn btn-primary" id="eventLink" href="https://www.facebook.com/ogdrico/" role="button" onclick="window.open(this.href); return false;">OG.D</a>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+          </li>
+
+    </ul>
+    </div>
+    </div>
+
+<!-- les partenaires -->
+
+    <div role="tabpanel" class="tab-pane" id="partenaires">
+      
+      <h2 class="planningTittle">Sur le festival :</h2> </br>
+      <div class="container bailPartners">
+        <div class="row">
+          <div class="col-6">
+            
+              <h2>Le Petit ZPL 📰 </h2> kiosque à journaux alternatifs ou indépendants, émission en direct, interview du public, interview par le public</br>
+              <a href="https://lepetitzpl.zpl.zone/" onclick="window.open(this.href); return false;">► https://lepetitzpl.zpl.zone</a>
+
+              <h2>Shlag Lab</h2>  vente de textiles et papiers sérigraphiés originaux</br></br>
+
+              <h2>Observatoire citoyen du CRA de Palaiseau 👤 </h2> au sujet d'une prison qui ne dit pas son nom </br>
+ papotage et information sur les droits des étrangers retenus à Palaiseau</br>
+              <a href="https://observatoirecrapal.jimdo.com/" onclick="window.open(this.href); return false;">► https://observatoirecrapal.jimdo.com</a>
+
+              <h2>Pyrath </h2> streetwear local, rpz</br></br>
+
+              <h2>La Goutte d'Art</h2>  Fasto Art x Bernio del Mar </br>
+art pour tous, art vers tous, art avec tous
+peinture de lumière (lightpaintingzer), fresques participatives ...</br></br>
+            
+              <h2>Vincent Peugnet 🎥 </h2> installation Robotcam </br></br>
+            </div>
+            <div class="col-6">
+              <h2>Lili voyance 🔮</h2></br></br>
+  
+              <h2>Leblanc Maxime ✨ </h2> objets magiques en métal </br></br>
+
+              <h2>Performance/installation par une team Ensba Lyon </h2> Ecole nationale supérieure des beaux-arts de Lyon sur le thème de l'∞ </br></br>
+
+              <h2>Marin Marien 🗣 </h2> installations sonores </br></br>
+
+              <h2>Fausta mimimanoir </h2> maquillage </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
