@@ -17,8 +17,10 @@
 }
 
 #map {
-	height: 75vh;
-	width: 28vw;
+	max-height: 100vh;
+	max-width: 100vw;
+	height: 80vh;
+	width: 30vw;
 }
 
 #infos {
