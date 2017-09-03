@@ -1,52 +1,4 @@
-#reseauxSociaux a {
-    color: white;
-    font-size: 250%;
-    margin:auto;
-}
-
-#youtube {
-    height: 50vh;
-}
-
-#reseauxSociaux {
-    text-align: center;
-    display: flex;
-}
-
-#buttonContainer {
-	/*padding-top: 5%;*/
-	text-align: center;
-    margin-top: 2vh;
-    background-color: rgba(0, 0, 0, 0.5);
-	}
-
-.mosaique {
-	text-align: center;
-    color: rgba(255,255,255, 0.8);
-}
-
-#poème{
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-#annonce {
-    background-color: rgba(0, 0, 0, 0.5);
-
-}
-
-#poème h2 {
-    text-align:center;
-    color: rgba(255,255,255, 0.8);
-    margin-top: 2vh;
-    margin-bottom: 4vh;
-}
-
-#mosaique2{
-    flex: auto;
-    margin-bottom: 2vh;
-}
-
-#frontAO {
+#wrapperpage {
  width: 100vw;
  height: 90vh;
  position: relative;
@@ -55,14 +7,14 @@
  margin-top: 3vh;
 }
 
-#background{
+#frontAO {
     width: 100%;         /* Same width as parent container */
     height: 100%;        /* Ditto height */
     position: absolute;  /* Take out of document flow. Default position 0,0 */
     z-index: -1;         /* Push it behind anything else in its container */
 }
 
-#background img {
+#frontAO img {
     max-width: 100%;     /* Don't let it get wider than its container */
     max-height: 100%;    /* Nor taller */
     display: block;      /* Lets margins be set (otherwise in-line) */
@@ -73,19 +25,3 @@
     right: 0;            /* and the far right (ditto) */
     margin: auto;        /* Best compromise between left/right & top/bottom = centre */
 }
-
-#GO {
-	position: absolute;
-	top: 89%;
-	left: 49%;
-}
-
-#pageContent {
-    margin-top: 3vh;
-}
-
-#soundcloud {
-
-}
-
-
