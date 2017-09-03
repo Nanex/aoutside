@@ -9,10 +9,14 @@
 
 #carouselChantier {
   display: inline-block;
+  text-align: center;
   width:380px;
   height:265px;
 }
-
+.relSize{
+	width: 80%;
+	
+}
 /*spacing of join button section*/
 #buttonContainer {
 	padding-top: 5%;
