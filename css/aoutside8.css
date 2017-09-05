@@ -84,8 +84,9 @@
     margin-top: 3vh;
 }
 
-#soundcloud {
-
+.wrapperVideo {
+    height: 540px;
+    width: auto;
 }
 
 

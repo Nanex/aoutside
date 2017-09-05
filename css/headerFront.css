@@ -1,0 +1,16 @@
+#navMain {
+	background-color: rgba(0,0,0, 0.8);
+}
+
+#brand {
+	color: white;
+}
+
+#navbarAoutside ul li a {
+	color: rgba(255,255,255, 0.8);
+}
+
+#boutonMenu {
+	color: white;
+	background-color: white;
+}

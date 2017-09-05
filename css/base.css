@@ -5,8 +5,9 @@ body {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        background-repeat: repeat-y;
+        background-repeat: no-repeat;
         background-position: center;
+        background-color: black;
 }
 
 @viewport {
