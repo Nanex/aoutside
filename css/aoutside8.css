@@ -2,6 +2,7 @@
     color: white;
     font-size: 350%;
     margin:auto;
+    margin-bottom : 2vh;
 }
 
 #youtube {
@@ -27,6 +28,7 @@
 
 #poème{
     background-color: rgba(0, 0, 0, 0.7);
+    font-size: 90%;
 }
 
 #annonce {
