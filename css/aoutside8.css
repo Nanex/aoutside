@@ -1,8 +1,8 @@
 #reseauxSociaux a {
     color: white;
-    font-size: 350%;
+    font-size: 300%;
     margin:auto;
-    margin-bottom : 2vh;
+    margin-bottom : 1vh;
 }
 
 #youtube {
@@ -39,8 +39,8 @@
 #poème h2 {
     text-align:center;
     color: rgba(255,255,255, 0.8);
-    margin-top: 2vh;
-    margin-bottom: 4vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
 }
 
 #mosaique2{
