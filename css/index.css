@@ -1,27 +1,8 @@
-#wrapperpage {
- width: 100vw;
- height: 90vh;
- position: relative;
- margin: auto;
- margin-bottom: 2vh;
- margin-top: 3vh;
+#imgWrapper {
+    display: flex;
 }
 
-#frontAO {
-    width: 100%;         /* Same width as parent container */
-    height: 100%;        /* Ditto height */
-    position: absolute;  /* Take out of document flow. Default position 0,0 */
-    z-index: -1;         /* Push it behind anything else in its container */
-}
-
-#frontAO img {
-    max-width: 100%;     /* Don't let it get wider than its container */
-    max-height: 100%;    /* Nor taller */
-    display: block;      /* Lets margins be set (otherwise in-line) */
-    position: absolute:  /* Lets us position it */
-    top: 0;              /* Put it at the top ... */
-    left: 0;             /* on the far left ... */
-    bottom: 0;           /* and at the bottom (makes sense later) */
-    right: 0;            /* and the far right (ditto) */
-    margin: auto;        /* Best compromise between left/right & top/bottom = centre */
+#imgWrapper img {
+    margin: auto;
+    max-width: 100%
 }
