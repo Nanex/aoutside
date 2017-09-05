@@ -1,6 +1,6 @@
 #reseauxSociaux a {
     color: white;
-    font-size: 250%;
+    font-size: 350%;
     margin:auto;
 }
 
@@ -78,10 +78,6 @@
 	position: absolute;
 	top: 89%;
 	left: 49%;
-}
-
-#pageContent {
-    margin-top: 3vh;
 }
 
 .wrapperVideo {
