@@ -1,9 +1,9 @@
 body {
 	padding-top: 56px;
 	background-image: url(../dependencies/images/AO-Back2.png);
-	-webkit-background-size: cover;
+	/*-webkit-background-size: cover;
         -moz-background-size: cover;
-        -o-background-size: cover;
+        -o-background-size: cover;*/
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
