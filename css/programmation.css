@@ -14,12 +14,14 @@
     padding-top: 1%;
 }
 .bailPartners{
-    background-color:#eeeeee; 
+    /*background-color:#eeeeee;*/
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: rgba(255,255,255, 0.8);
 }
-#scene1{
+.scene1{
 color: #3f903f;
 }
-#scene2{
+.scene2{
 color: #f0ad4e;
 }
 /*
@@ -122,7 +124,7 @@ concerning the timeline
             position: absolute;
             top: 16px;
             left: 50%;
-            margin-left: -25px;
+            margin-left: -30px;
             background-color: #999999;
             z-index: 100;
             border-top-right-radius: 50%;
