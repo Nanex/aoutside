@@ -2,9 +2,10 @@
 	padding-top: 1%;
 }
 
-.mosaique{
-	background-color: grey;
+.mosaique {
 	text-align: center;
+    color: rgba(255,255,255, 0.8);
+    background-color: rgba(0,0,0, 0.5);
 }
 
 #carouselChantier {
